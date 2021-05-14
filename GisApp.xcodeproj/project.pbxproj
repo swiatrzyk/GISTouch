@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE17D474264F1A8C00BF590F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D473264F1A8C00BF590F /* AppDelegate.swift */; };
+		CE17D476264F1A8C00BF590F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D475264F1A8C00BF590F /* SceneDelegate.swift */; };
+		CE17D478264F1A8C00BF590F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D477264F1A8C00BF590F /* ViewController.swift */; };
+		CE17D47B264F1A8D00BF590F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17D479264F1A8D00BF590F /* Main.storyboard */; };
+		CE17D47E264F1A8D00BF590F /* GisApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE17D47C264F1A8D00BF590F /* GisApp.xcdatamodeld */; };
+		CE17D480264F1A9100BF590F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE17D47F264F1A9100BF590F /* Assets.xcassets */; };
+		CE17D483264F1A9100BF590F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17D481264F1A9100BF590F /* LaunchScreen.storyboard */; };
+		CE17D48E264F1A9100BF590F /* GisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D48D264F1A9100BF590F /* GisAppTests.swift */; };
+		CE17D499264F1A9100BF590F /* GisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D498264F1A9100BF590F /* GisAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE17D48A264F1A9100BF590F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE17D468264F1A8C00BF590F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE17D46F264F1A8C00BF590F;
+			remoteInfo = GisApp;
+		};
+		CE17D495264F1A9100BF590F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE17D468264F1A8C00BF590F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE17D46F264F1A8C00BF590F;
+			remoteInfo = GisApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE17D470264F1A8C00BF590F /* GisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE17D473264F1A8C00BF590F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE17D475264F1A8C00BF590F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE17D477264F1A8C00BF590F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE17D47A264F1A8D00BF590F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE17D47D264F1A8D00BF590F /* GisApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GisApp.xcdatamodel; sourceTree = "<group>"; };
+		CE17D47F264F1A9100BF590F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE17D482264F1A9100BF590F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE17D484264F1A9100BF590F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE17D489264F1A9100BF590F /* GisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE17D48D264F1A9100BF590F /* GisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GisAppTests.swift; sourceTree = "<group>"; };
+		CE17D48F264F1A9100BF590F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE17D494264F1A9100BF590F /* GisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE17D498264F1A9100BF590F /* GisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GisAppUITests.swift; sourceTree = "<group>"; };
+		CE17D49A264F1A9100BF590F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE17D46D264F1A8C00BF590F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE17D486264F1A9100BF590F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE17D491264F1A9100BF590F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE17D467264F1A8C00BF590F = {
+			isa = PBXGroup;
+			children = (
+				CE17D472264F1A8C00BF590F /* GisApp */,
+				CE17D48C264F1A9100BF590F /* GisAppTests */,
+				CE17D497264F1A9100BF590F /* GisAppUITests */,
+				CE17D471264F1A8C00BF590F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE17D471264F1A8C00BF590F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D470264F1A8C00BF590F /* GisApp.app */,
+				CE17D489264F1A9100BF590F /* GisAppTests.xctest */,
+				CE17D494264F1A9100BF590F /* GisAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE17D472264F1A8C00BF590F /* GisApp */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D473264F1A8C00BF590F /* AppDelegate.swift */,
+				CE17D475264F1A8C00BF590F /* SceneDelegate.swift */,
+				CE17D477264F1A8C00BF590F /* ViewController.swift */,
+				CE17D479264F1A8D00BF590F /* Main.storyboard */,
+				CE17D47F264F1A9100BF590F /* Assets.xcassets */,
+				CE17D481264F1A9100BF590F /* LaunchScreen.storyboard */,
+				CE17D484264F1A9100BF590F /* Info.plist */,
+				CE17D47C264F1A8D00BF590F /* GisApp.xcdatamodeld */,
+			);
+			path = GisApp;
+			sourceTree = "<group>";
+		};
+		CE17D48C264F1A9100BF590F /* GisAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D48D264F1A9100BF590F /* GisAppTests.swift */,
+				CE17D48F264F1A9100BF590F /* Info.plist */,
+			);
+			path = GisAppTests;
+			sourceTree = "<group>";
+		};
+		CE17D497264F1A9100BF590F /* GisAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D498264F1A9100BF590F /* GisAppUITests.swift */,
+				CE17D49A264F1A9100BF590F /* Info.plist */,
+			);
+			path = GisAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE17D46F264F1A8C00BF590F /* GisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE17D49D264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisApp" */;
+			buildPhases = (
+				CE17D46C264F1A8C00BF590F /* Sources */,
+				CE17D46D264F1A8C00BF590F /* Frameworks */,
+				CE17D46E264F1A8C00BF590F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GisApp;
+			productName = GisApp;
+			productReference = CE17D470264F1A8C00BF590F /* GisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE17D488264F1A9100BF590F /* GisAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE17D4A0264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisAppTests" */;
+			buildPhases = (
+				CE17D485264F1A9100BF590F /* Sources */,
+				CE17D486264F1A9100BF590F /* Frameworks */,
+				CE17D487264F1A9100BF590F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE17D48B264F1A9100BF590F /* PBXTargetDependency */,
+			);
+			name = GisAppTests;
+			productName = GisAppTests;
+			productReference = CE17D489264F1A9100BF590F /* GisAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE17D493264F1A9100BF590F /* GisAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE17D4A3264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisAppUITests" */;
+			buildPhases = (
+				CE17D490264F1A9100BF590F /* Sources */,
+				CE17D491264F1A9100BF590F /* Frameworks */,
+				CE17D492264F1A9100BF590F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE17D496264F1A9100BF590F /* PBXTargetDependency */,
+			);
+			name = GisAppUITests;
+			productName = GisAppUITests;
+			productReference = CE17D494264F1A9100BF590F /* GisAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE17D468264F1A8C00BF590F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CE17D46F264F1A8C00BF590F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CE17D488264F1A9100BF590F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CE17D46F264F1A8C00BF590F;
+					};
+					CE17D493264F1A9100BF590F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CE17D46F264F1A8C00BF590F;
+					};
+				};
+			};
+			buildConfigurationList = CE17D46B264F1A8C00BF590F /* Build configuration list for PBXProject "GisApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE17D467264F1A8C00BF590F;
+			productRefGroup = CE17D471264F1A8C00BF590F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE17D46F264F1A8C00BF590F /* GisApp */,
+				CE17D488264F1A9100BF590F /* GisAppTests */,
+				CE17D493264F1A9100BF590F /* GisAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE17D46E264F1A8C00BF590F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE17D483264F1A9100BF590F /* LaunchScreen.storyboard in Resources */,
+				CE17D480264F1A9100BF590F /* Assets.xcassets in Resources */,
+				CE17D47B264F1A8D00BF590F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE17D487264F1A9100BF590F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE17D492264F1A9100BF590F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE17D46C264F1A8C00BF590F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE17D478264F1A8C00BF590F /* ViewController.swift in Sources */,
+				CE17D474264F1A8C00BF590F /* AppDelegate.swift in Sources */,
+				CE17D476264F1A8C00BF590F /* SceneDelegate.swift in Sources */,
+				CE17D47E264F1A8D00BF590F /* GisApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE17D485264F1A9100BF590F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE17D48E264F1A9100BF590F /* GisAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE17D490264F1A9100BF590F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE17D499264F1A9100BF590F /* GisAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE17D48B264F1A9100BF590F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE17D46F264F1A8C00BF590F /* GisApp */;
+			targetProxy = CE17D48A264F1A9100BF590F /* PBXContainerItemProxy */;
+		};
+		CE17D496264F1A9100BF590F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE17D46F264F1A8C00BF590F /* GisApp */;
+			targetProxy = CE17D495264F1A9100BF590F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE17D479264F1A8D00BF590F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE17D47A264F1A8D00BF590F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE17D481264F1A9100BF590F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE17D482264F1A9100BF590F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE17D49B264F1A9100BF590F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE17D49C264F1A9100BF590F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE17D49E264F1A9100BF590F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UA9PUHGMS;
+				INFOPLIST_FILE = GisApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE17D49F264F1A9100BF590F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UA9PUHGMS;
+				INFOPLIST_FILE = GisApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE17D4A1264F1A9100BF590F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UA9PUHGMS;
+				INFOPLIST_FILE = GisAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GisApp.app/GisApp";
+			};
+			name = Debug;
+		};
+		CE17D4A2264F1A9100BF590F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UA9PUHGMS;
+				INFOPLIST_FILE = GisAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GisApp.app/GisApp";
+			};
+			name = Release;
+		};
+		CE17D4A4264F1A9100BF590F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UA9PUHGMS;
+				INFOPLIST_FILE = GisAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GisApp;
+			};
+			name = Debug;
+		};
+		CE17D4A5264F1A9100BF590F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UA9PUHGMS;
+				INFOPLIST_FILE = GisAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GisApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE17D46B264F1A8C00BF590F /* Build configuration list for PBXProject "GisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE17D49B264F1A9100BF590F /* Debug */,
+				CE17D49C264F1A9100BF590F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE17D49D264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE17D49E264F1A9100BF590F /* Debug */,
+				CE17D49F264F1A9100BF590F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE17D4A0264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE17D4A1264F1A9100BF590F /* Debug */,
+				CE17D4A2264F1A9100BF590F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE17D4A3264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE17D4A4264F1A9100BF590F /* Debug */,
+				CE17D4A5264F1A9100BF590F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE17D47C264F1A8D00BF590F /* GisApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE17D47D264F1A8D00BF590F /* GisApp.xcdatamodel */,
+			);
+			currentVersion = CE17D47D264F1A8D00BF590F /* GisApp.xcdatamodel */;
+			path = GisApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE17D468264F1A8C00BF590F /* Project object */;
+}
