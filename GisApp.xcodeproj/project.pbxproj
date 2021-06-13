@@ -3,19 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8FC82E5CEE99173B315DE2C /* Pods_GisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0803536C7D2298088E18E67 /* Pods_GisApp.framework */; };
 		CE17D474264F1A8C00BF590F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D473264F1A8C00BF590F /* AppDelegate.swift */; };
 		CE17D476264F1A8C00BF590F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D475264F1A8C00BF590F /* SceneDelegate.swift */; };
-		CE17D478264F1A8C00BF590F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D477264F1A8C00BF590F /* ViewController.swift */; };
 		CE17D47B264F1A8D00BF590F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17D479264F1A8D00BF590F /* Main.storyboard */; };
 		CE17D47E264F1A8D00BF590F /* GisApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE17D47C264F1A8D00BF590F /* GisApp.xcdatamodeld */; };
 		CE17D480264F1A9100BF590F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE17D47F264F1A9100BF590F /* Assets.xcassets */; };
 		CE17D483264F1A9100BF590F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17D481264F1A9100BF590F /* LaunchScreen.storyboard */; };
 		CE17D48E264F1A9100BF590F /* GisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D48D264F1A9100BF590F /* GisAppTests.swift */; };
 		CE17D499264F1A9100BF590F /* GisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D498264F1A9100BF590F /* GisAppUITests.swift */; };
+		CE17D4A826505EC700BF590F /* Shapefile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D4A726505EC700BF590F /* Shapefile.swift */; };
+		CE17D4AA26505F0300BF590F /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D4A926505F0300BF590F /* BinUtils.swift */; };
+		CE17D4AC2650601800BF590F /* ShapefileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D4AB2650601800BF590F /* ShapefileTests.swift */; };
+		CE17D4AE2650605A00BF590F /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D4A926505F0300BF590F /* BinUtils.swift */; };
+		CE17D4AF2650605D00BF590F /* Shapefile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17D4A726505EC700BF590F /* Shapefile.swift */; };
+		CE17D4BC2651685900BF590F /* Kantone.prj in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B52651685900BF590F /* Kantone.prj */; };
+		CE17D4BD2651685900BF590F /* Kantone.sbn in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B62651685900BF590F /* Kantone.sbn */; };
+		CE17D4BE2651685900BF590F /* Kantone.dbf in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B72651685900BF590F /* Kantone.dbf */; };
+		CE17D4BF2651685900BF590F /* Kantone.shp.xml in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B82651685900BF590F /* Kantone.shp.xml */; };
+		CE17D4C02651685900BF590F /* Kantone.shp in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B92651685900BF590F /* Kantone.shp */; };
+		CE17D4C12651685900BF590F /* Kantone.sbx in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4BA2651685900BF590F /* Kantone.sbx */; };
+		CE17D4C22651685900BF590F /* Kantone.shx in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4BB2651685900BF590F /* Kantone.shx */; };
+		CE1A3865265D5E710056B171 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A3864265D5E710056B171 /* Shape.swift */; };
+		CE1A386A265D5FD60056B171 /* ThirdColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A3867265D5FD60056B171 /* ThirdColumnViewController.swift */; };
+		CE1A386B265D5FD60056B171 /* SecondColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A3868265D5FD60056B171 /* SecondColumnViewController.swift */; };
+		CE1A386C265D5FD60056B171 /* FirstColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A3869265D5FD60056B171 /* FirstColumnViewController.swift */; };
+		CE1A386E265D60100056B171 /* HomeSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A386D265D60100056B171 /* HomeSplitViewController.swift */; };
+		CE1A386F265D69D30056B171 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A3864265D5E710056B171 /* Shape.swift */; };
+		CE732351266BC51F002FE14F /* UIWindow+isPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE732350266BC51E002FE14F /* UIWindow+isPortrait.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21BC5E73CECDC7351D7A5FD0 /* Pods-GisApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GisApp.release.xcconfig"; path = "Target Support Files/Pods-GisApp/Pods-GisApp.release.xcconfig"; sourceTree = "<group>"; };
+		CB60D55F9D34C10329898548 /* Pods-GisApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GisApp.debug.xcconfig"; path = "Target Support Files/Pods-GisApp/Pods-GisApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE17D470264F1A8C00BF590F /* GisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE17D473264F1A8C00BF590F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE17D475264F1A8C00BF590F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE17D477264F1A8C00BF590F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE17D47A264F1A8D00BF590F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE17D47D264F1A8D00BF590F /* GisApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GisApp.xcdatamodel; sourceTree = "<group>"; };
 		CE17D47F264F1A9100BF590F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +71,23 @@
 		CE17D494264F1A9100BF590F /* GisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE17D498264F1A9100BF590F /* GisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GisAppUITests.swift; sourceTree = "<group>"; };
 		CE17D49A264F1A9100BF590F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE17D4A726505EC700BF590F /* Shapefile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapefile.swift; sourceTree = "<group>"; };
+		CE17D4A926505F0300BF590F /* BinUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinUtils.swift; sourceTree = "<group>"; };
+		CE17D4AB2650601800BF590F /* ShapefileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapefileTests.swift; sourceTree = "<group>"; };
+		CE17D4B52651685900BF590F /* Kantone.prj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kantone.prj; sourceTree = "<group>"; };
+		CE17D4B62651685900BF590F /* Kantone.sbn */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.sbn; sourceTree = "<group>"; };
+		CE17D4B72651685900BF590F /* Kantone.dbf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.dbf; sourceTree = "<group>"; };
+		CE17D4B82651685900BF590F /* Kantone.shp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Kantone.shp.xml; sourceTree = "<group>"; };
+		CE17D4B92651685900BF590F /* Kantone.shp */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.shp; sourceTree = "<group>"; };
+		CE17D4BA2651685900BF590F /* Kantone.sbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.sbx; sourceTree = "<group>"; };
+		CE17D4BB2651685900BF590F /* Kantone.shx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.shx; sourceTree = "<group>"; };
+		CE1A3864265D5E710056B171 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		CE1A3867265D5FD60056B171 /* ThirdColumnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdColumnViewController.swift; sourceTree = "<group>"; };
+		CE1A3868265D5FD60056B171 /* SecondColumnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondColumnViewController.swift; sourceTree = "<group>"; };
+		CE1A3869265D5FD60056B171 /* FirstColumnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstColumnViewController.swift; sourceTree = "<group>"; };
+		CE1A386D265D60100056B171 /* HomeSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSplitViewController.swift; sourceTree = "<group>"; };
+		CE732350266BC51E002FE14F /* UIWindow+isPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+isPortrait.swift"; sourceTree = "<group>"; };
+		F0803536C7D2298088E18E67 /* Pods_GisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FC82E5CEE99173B315DE2C /* Pods_GisApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +116,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37D2AE485BEE5E9048354921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0803536C7D2298088E18E67 /* Pods_GisApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1193211734CBA2DA7C38050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB60D55F9D34C10329898548 /* Pods-GisApp.debug.xcconfig */,
+				21BC5E73CECDC7351D7A5FD0 /* Pods-GisApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE17D467264F1A8C00BF590F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +140,8 @@
 				CE17D48C264F1A9100BF590F /* GisAppTests */,
 				CE17D497264F1A9100BF590F /* GisAppUITests */,
 				CE17D471264F1A8C00BF590F /* Products */,
+				A1193211734CBA2DA7C38050 /* Pods */,
+				37D2AE485BEE5E9048354921 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +160,9 @@
 			children = (
 				CE17D473264F1A8C00BF590F /* AppDelegate.swift */,
 				CE17D475264F1A8C00BF590F /* SceneDelegate.swift */,
-				CE17D477264F1A8C00BF590F /* ViewController.swift */,
-				CE17D479264F1A8D00BF590F /* Main.storyboard */,
+				CE1A3866265D5FD60056B171 /* Home View */,
+				CE17D4A626505EA100BF590F /* Shape File Parsing */,
+				CEBC409E26763A640078B8C2 /* Helpers */,
 				CE17D47F264F1A9100BF590F /* Assets.xcassets */,
 				CE17D481264F1A9100BF590F /* LaunchScreen.storyboard */,
 				CE17D484264F1A9100BF590F /* Info.plist */,
@@ -118,6 +176,8 @@
 			children = (
 				CE17D48D264F1A9100BF590F /* GisAppTests.swift */,
 				CE17D48F264F1A9100BF590F /* Info.plist */,
+				CE17D4AB2650601800BF590F /* ShapefileTests.swift */,
+				CE17D4B0265060B800BF590F /* Shape files */,
 			);
 			path = GisAppTests;
 			sourceTree = "<group>";
@@ -131,6 +191,66 @@
 			path = GisAppUITests;
 			sourceTree = "<group>";
 		};
+		CE17D4A626505EA100BF590F /* Shape File Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				CE1A3864265D5E710056B171 /* Shape.swift */,
+				CE17D4A726505EC700BF590F /* Shapefile.swift */,
+				CE17D4A926505F0300BF590F /* BinUtils.swift */,
+			);
+			path = "Shape File Parsing";
+			sourceTree = "<group>";
+		};
+		CE17D4B0265060B800BF590F /* Shape files */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D4B42651685900BF590F /* Kantone */,
+			);
+			path = "Shape files";
+			sourceTree = "<group>";
+		};
+		CE17D4B42651685900BF590F /* Kantone */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D4B52651685900BF590F /* Kantone.prj */,
+				CE17D4B62651685900BF590F /* Kantone.sbn */,
+				CE17D4B72651685900BF590F /* Kantone.dbf */,
+				CE17D4B82651685900BF590F /* Kantone.shp.xml */,
+				CE17D4B92651685900BF590F /* Kantone.shp */,
+				CE17D4BA2651685900BF590F /* Kantone.sbx */,
+				CE17D4BB2651685900BF590F /* Kantone.shx */,
+			);
+			path = Kantone;
+			sourceTree = "<group>";
+		};
+		CE1A3866265D5FD60056B171 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D479264F1A8D00BF590F /* Main.storyboard */,
+				CE1A386D265D60100056B171 /* HomeSplitViewController.swift */,
+				CEBC409D267639EE0078B8C2 /* SplitView Columns */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		CEBC409D267639EE0078B8C2 /* SplitView Columns */ = {
+			isa = PBXGroup;
+			children = (
+				CE1A3869265D5FD60056B171 /* FirstColumnViewController.swift */,
+				CE1A3868265D5FD60056B171 /* SecondColumnViewController.swift */,
+				CE1A3867265D5FD60056B171 /* ThirdColumnViewController.swift */,
+			);
+			path = "SplitView Columns";
+			sourceTree = "<group>";
+		};
+		CEBC409E26763A640078B8C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE732350266BC51E002FE14F /* UIWindow+isPortrait.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE17D49D264F1A9100BF590F /* Build configuration list for PBXNativeTarget "GisApp" */;
 			buildPhases = (
+				1099D4426931E07FF1EC859F /* [CP] Check Pods Manifest.lock */,
 				CE17D46C264F1A8C00BF590F /* Sources */,
 				CE17D46D264F1A8C00BF590F /* Frameworks */,
 				CE17D46E264F1A8C00BF590F /* Resources */,
+				48A46C42DF78033310415975 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +366,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17D4C02651685900BF590F /* Kantone.shp in Resources */,
+				CE17D4BD2651685900BF590F /* Kantone.sbn in Resources */,
+				CE17D4C12651685900BF590F /* Kantone.sbx in Resources */,
+				CE17D4BE2651685900BF590F /* Kantone.dbf in Resources */,
+				CE17D4C22651685900BF590F /* Kantone.shx in Resources */,
+				CE17D4BF2651685900BF590F /* Kantone.shp.xml in Resources */,
+				CE17D4BC2651685900BF590F /* Kantone.prj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +385,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1099D4426931E07FF1EC859F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GisApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A46C42DF78033310415975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GisApp/Pods-GisApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GisApp/Pods-GisApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GisApp/Pods-GisApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE17D46C264F1A8C00BF590F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE17D478264F1A8C00BF590F /* ViewController.swift in Sources */,
+				CE1A386C265D5FD60056B171 /* FirstColumnViewController.swift in Sources */,
+				CE1A386B265D5FD60056B171 /* SecondColumnViewController.swift in Sources */,
+				CE732351266BC51F002FE14F /* UIWindow+isPortrait.swift in Sources */,
+				CE17D4AA26505F0300BF590F /* BinUtils.swift in Sources */,
+				CE17D4A826505EC700BF590F /* Shapefile.swift in Sources */,
+				CE1A386E265D60100056B171 /* HomeSplitViewController.swift in Sources */,
+				CE1A3865265D5E710056B171 /* Shape.swift in Sources */,
 				CE17D474264F1A8C00BF590F /* AppDelegate.swift in Sources */,
+				CE1A386A265D5FD60056B171 /* ThirdColumnViewController.swift in Sources */,
 				CE17D476264F1A8C00BF590F /* SceneDelegate.swift in Sources */,
 				CE17D47E264F1A8D00BF590F /* GisApp.xcdatamodeld in Sources */,
 			);
@@ -272,7 +450,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1A386F265D69D30056B171 /* Shape.swift in Sources */,
 				CE17D48E264F1A9100BF590F /* GisAppTests.swift in Sources */,
+				CE17D4AE2650605A00BF590F /* BinUtils.swift in Sources */,
+				CE17D4AC2650601800BF590F /* ShapefileTests.swift in Sources */,
+				CE17D4AF2650605D00BF590F /* Shapefile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,6 +619,7 @@
 		};
 		CE17D49E264F1A9100BF590F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB60D55F9D34C10329898548 /* Pods-GisApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maltaz.gisapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +639,7 @@
 		};
 		CE17D49F264F1A9100BF590F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BC5E73CECDC7351D7A5FD0 /* Pods-GisApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,7 +650,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gisAapp.maltaz.GisApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maltaz.gisapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

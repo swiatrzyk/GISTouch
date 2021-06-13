@@ -1,0 +1,29 @@
+PODS:
+  - FileKit (5.0.0)
+  - geos (6.0.2)
+  - GEOSwift (8.0.2):
+    - geos (~> 6.0)
+  - GEOSwiftMapKit (3.0.0):
+    - GEOSwift (~> 8.0)
+
+DEPENDENCIES:
+  - FileKit (~> 5.0.0)
+  - GEOSwift
+  - GEOSwiftMapKit
+
+SPEC REPOS:
+  trunk:
+    - FileKit
+    - geos
+    - GEOSwift
+    - GEOSwiftMapKit
+
+SPEC CHECKSUMS:
+  FileKit: 857f5f9d2583044c1354e7564b110d80f31405e8
+  geos: 73e5122ba8c6857812419873df3aa9a1920140a9
+  GEOSwift: 259844a41c1680d7dc8d9a393741a08f84c0e23a
+  GEOSwiftMapKit: 7b8cb5b2536e9e190196d2c298711524a47d6275
+
+PODFILE CHECKSUM: 491d3fddebef730b3c1041e84987675e1300bc47
+
+COCOAPODS: 1.10.1
