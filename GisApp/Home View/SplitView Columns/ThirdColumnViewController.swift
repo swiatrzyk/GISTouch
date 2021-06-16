@@ -17,7 +17,7 @@ class ThirdColumnViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemPink
+        self.view.backgroundColor = .systemBlue
         // Do any additional setup after loading the view.
         configureView()
     }

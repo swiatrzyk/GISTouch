@@ -82,7 +82,6 @@ class SecondColumnViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
         configureView()
         mapView.delegate = self
         let moreButton = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(more(_:)))
