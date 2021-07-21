@@ -28,6 +28,12 @@ class FirstColumnViewController: UITableViewController {
             detailViewController?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
             detailViewController?.navigationItem.leftItemsSupplementBackButton = true
         }
+        
+        if let path = Bundle.main.path(forResource:"Kantone", ofType: "shp"),
+           let shapefileReader = try? ShapefileReader(path:path) {
+            let shapes = shapefileReader.shp.allShapes()
+        }
+        //        objects.append()
     }
     
     override func viewWillAppear(_ animated: Bool) {

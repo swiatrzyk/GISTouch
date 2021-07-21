@@ -24,8 +24,7 @@
 		CE17D4BC2651685900BF590F /* Kantone.prj in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B52651685900BF590F /* Kantone.prj */; };
 		CE17D4BD2651685900BF590F /* Kantone.sbn in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B62651685900BF590F /* Kantone.sbn */; };
 		CE17D4BE2651685900BF590F /* Kantone.dbf in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B72651685900BF590F /* Kantone.dbf */; };
-		CE17D4BF2651685900BF590F /* Kantone.shp.xml in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B82651685900BF590F /* Kantone.shp.xml */; };
-		CE17D4C02651685900BF590F /* Kantone.shp in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B92651685900BF590F /* Kantone.shp */; };
+		CE17D4BF2651685900BF590F /* Kantone.shp in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4B82651685900BF590F /* Kantone.shp */; };
 		CE17D4C12651685900BF590F /* Kantone.sbx in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4BA2651685900BF590F /* Kantone.sbx */; };
 		CE17D4C22651685900BF590F /* Kantone.shx in Resources */ = {isa = PBXBuildFile; fileRef = CE17D4BB2651685900BF590F /* Kantone.shx */; };
 		CE1A3865265D5E710056B171 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A3864265D5E710056B171 /* Shape.swift */; };
@@ -77,8 +76,7 @@
 		CE17D4B52651685900BF590F /* Kantone.prj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kantone.prj; sourceTree = "<group>"; };
 		CE17D4B62651685900BF590F /* Kantone.sbn */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.sbn; sourceTree = "<group>"; };
 		CE17D4B72651685900BF590F /* Kantone.dbf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.dbf; sourceTree = "<group>"; };
-		CE17D4B82651685900BF590F /* Kantone.shp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Kantone.shp.xml; sourceTree = "<group>"; };
-		CE17D4B92651685900BF590F /* Kantone.shp */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.shp; sourceTree = "<group>"; };
+		CE17D4B82651685900BF590F /* Kantone.shp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Kantone.shp; sourceTree = "<group>"; };
 		CE17D4BA2651685900BF590F /* Kantone.sbx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.sbx; sourceTree = "<group>"; };
 		CE17D4BB2651685900BF590F /* Kantone.shx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kantone.shx; sourceTree = "<group>"; };
 		CE1A3864265D5E710056B171 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
@@ -215,8 +213,7 @@
 				CE17D4B52651685900BF590F /* Kantone.prj */,
 				CE17D4B62651685900BF590F /* Kantone.sbn */,
 				CE17D4B72651685900BF590F /* Kantone.dbf */,
-				CE17D4B82651685900BF590F /* Kantone.shp.xml */,
-				CE17D4B92651685900BF590F /* Kantone.shp */,
+				CE17D4B82651685900BF590F /* Kantone.shp */,
 				CE17D4BA2651685900BF590F /* Kantone.sbx */,
 				CE17D4BB2651685900BF590F /* Kantone.shx */,
 			);
@@ -366,12 +363,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE17D4C02651685900BF590F /* Kantone.shp in Resources */,
 				CE17D4BD2651685900BF590F /* Kantone.sbn in Resources */,
 				CE17D4C12651685900BF590F /* Kantone.sbx in Resources */,
 				CE17D4BE2651685900BF590F /* Kantone.dbf in Resources */,
 				CE17D4C22651685900BF590F /* Kantone.shx in Resources */,
-				CE17D4BF2651685900BF590F /* Kantone.shp.xml in Resources */,
+				CE17D4BF2651685900BF590F /* Kantone.shp in Resources */,
 				CE17D4BC2651685900BF590F /* Kantone.prj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
