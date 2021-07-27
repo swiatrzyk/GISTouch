@@ -6,61 +6,17 @@ import GEOSwiftMapKit
 
 extension SecondColumnViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.fillColor = UIColor.red.withAlphaComponent(0.9)
-        renderer.strokeColor = UIColor.red.withAlphaComponent(0.8)
-        return renderer
+        let polygonsView = MultiPolygonRenderer(overlay: overlay)
+        polygonsView.fillColor = .clear
+        polygonsView.strokeColor = .blue.withAlphaComponent(0.8)
+        polygonsView.lineWidth = 1
+        return polygonsView
     }
-//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-//        switch mapMode {
-//        case .basic:
-//            return tileRenderer
-//        case .vector:
-//            let renderer = MKPolylineRenderer(overlay: overlay)
-//            renderer.fillColor = UIColor.red.withAlphaComponent(0.9)
-//            renderer.strokeColor = UIColor.red.withAlphaComponent(0.8)
-//            return renderer
-//        }
-//    }
 }
 
 class SecondColumnViewController: UIViewController {
     
     var thirdColumnViewController: ThirdColumnViewController? = nil
-    
-    var geoData: GeoJSON? = nil {
-        didSet {
-            switch geoData {
-            case .feature(let feature):
-                break
-            case .featureCollection(let featureCollection):
-                featureCollection.features.forEach { feature in
-                    if let geometry = feature.geometry,
-                       let overlay = try? GeometryMapShape(geometry: geometry) {
-                        mapView.addOverlay(overlay)
-                        
-                        guard let initial = mapView.overlays.first?.boundingMapRect else { return }
-
-                        let mapRect = mapView.overlays
-                            .dropFirst()
-                            .reduce(initial) { $0.union($1.boundingMapRect) }
-                        
-                        let insets = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
-                        mapView.setVisibleMapRect(mapRect, edgePadding: insets, animated: true)
-                    }
-                }
-                break
-            case .geometry(let geometry):
-//                try? GeometryMapShape(geometry: geometry)
-                break
-            case .none:
-                print("None")
-            }
-//            let shape1 = MKPointAnnotation(point: geoData)
-//            let shape2 = try? GeometryMapShape(geometry: geoData)
-//            let annotations = [shape1, shape2]
-        }
-    }
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     
@@ -109,6 +65,11 @@ class SecondColumnViewController: UIViewController {
         else {
             split.showMoreVC(!isMoreVCVisible, animated: true)
         }
+    }
+    
+    func loadFile(with filePath: String) {
+        let multiPolygonOverlay = MultiPolygonOverlay(with: filePath)
+        mapView.addOverlay(multiPolygonOverlay)
     }
 }
 
