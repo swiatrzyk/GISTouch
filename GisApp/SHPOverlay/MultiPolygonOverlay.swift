@@ -20,7 +20,9 @@ class MultiPolygonOverlay: NSObject, MKOverlay {
     }
     
     private func getPolygons(from filePath: String) -> [MKPolygon] {
-        return getPolygonsFromShapeFile(filePath).compactMap({ overlay in
+        
+
+        return ShplibAdapter.getPolygonsFromShapeFile(shpFilePath: filePath).compactMap({ overlay in
             guard let overlay = overlay as? MKPolygon else {
                 L.logger.warning("⚠️ Method `getPolygonsFromShapeFile` failed to parse to `MKOverlay` for object: \(overlay)")
                 return nil

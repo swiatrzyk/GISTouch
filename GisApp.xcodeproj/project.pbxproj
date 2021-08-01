@@ -44,7 +44,6 @@
 		CE242C7526B06EF700F7A767 /* DOKMPARCELA_P.prj in Resources */ = {isa = PBXBuildFile; fileRef = CE242C7226B06EF700F7A767 /* DOKMPARCELA_P.prj */; };
 		CE242C7826B06F6000F7A767 /* MultiPolygonOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE242C7726B06F6000F7A767 /* MultiPolygonOverlay.swift */; };
 		CE242C7A26B06F6C00F7A767 /* MultiPolygonRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE242C7926B06F6C00F7A767 /* MultiPolygonRenderer.swift */; };
-		CE242C7C26B06F8700F7A767 /* shpPolygons.h in Sources */ = {isa = PBXBuildFile; fileRef = CE242C7B26B06F8700F7A767 /* shpPolygons.h */; };
 		CE242CE526B0756700F7A767 /* shptree.c in Sources */ = {isa = PBXBuildFile; fileRef = CE242CE026B0756600F7A767 /* shptree.c */; };
 		CE242CE626B0756700F7A767 /* dbfopen.c in Sources */ = {isa = PBXBuildFile; fileRef = CE242CE226B0756600F7A767 /* dbfopen.c */; };
 		CE242CE726B0756700F7A767 /* safileio.c in Sources */ = {isa = PBXBuildFile; fileRef = CE242CE326B0756600F7A767 /* safileio.c */; };
@@ -53,6 +52,7 @@
 		CE242CF726B0ADA800F7A767 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE242CF626B0ADA800F7A767 /* Logger.swift */; };
 		CE732351266BC51F002FE14F /* UIWindow+isPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE732350266BC51E002FE14F /* UIWindow+isPortrait.swift */; };
 		CE9EC40426B70E5C00EF88EA /* ShapeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC40326B70E5C00EF88EA /* ShapeModels.swift */; };
+		CE9EC40626B724BA00EF88EA /* ShplibAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC40526B724BA00EF88EA /* ShplibAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +114,6 @@
 		CE242C7226B06EF700F7A767 /* DOKMPARCELA_P.prj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DOKMPARCELA_P.prj; sourceTree = "<group>"; };
 		CE242C7726B06F6000F7A767 /* MultiPolygonOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPolygonOverlay.swift; sourceTree = "<group>"; };
 		CE242C7926B06F6C00F7A767 /* MultiPolygonRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPolygonRenderer.swift; sourceTree = "<group>"; };
-		CE242C7B26B06F8700F7A767 /* shpPolygons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shpPolygons.h; sourceTree = "<group>"; };
 		CE242CBC26B0754400F7A767 /* shapelib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shapelib-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE242CE026B0756600F7A767 /* shptree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shptree.c; sourceTree = "<group>"; };
 		CE242CE126B0756600F7A767 /* shapefil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shapefil.h; sourceTree = "<group>"; };
@@ -124,6 +123,7 @@
 		CE242CF626B0ADA800F7A767 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CE732350266BC51E002FE14F /* UIWindow+isPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+isPortrait.swift"; sourceTree = "<group>"; };
 		CE9EC40326B70E5C00EF88EA /* ShapeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeModels.swift; sourceTree = "<group>"; };
+		CE9EC40526B724BA00EF88EA /* ShplibAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShplibAdapter.swift; sourceTree = "<group>"; };
 		F0803536C7D2298088E18E67 /* Pods_GisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -290,6 +290,7 @@
 		CE242C6026B06E3900F7A767 /* External libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CE9EC40526B724BA00EF88EA /* ShplibAdapter.swift */,
 				CE242C3C26B06E2A00F7A767 /* shapelib */,
 			);
 			path = "External libraries";
@@ -332,7 +333,6 @@
 			children = (
 				CE242C7726B06F6000F7A767 /* MultiPolygonOverlay.swift */,
 				CE242C7926B06F6C00F7A767 /* MultiPolygonRenderer.swift */,
-				CE242C7B26B06F8700F7A767 /* shpPolygons.h */,
 			);
 			path = SHPOverlay;
 			sourceTree = "<group>";
@@ -579,7 +579,7 @@
 				CE9EC40426B70E5C00EF88EA /* ShapeModels.swift in Sources */,
 				CE17D47E264F1A8D00BF590F /* GisApp.xcdatamodeld in Sources */,
 				CE242CE526B0756700F7A767 /* shptree.c in Sources */,
-				CE242C7C26B06F8700F7A767 /* shpPolygons.h in Sources */,
+				CE9EC40626B724BA00EF88EA /* ShplibAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
