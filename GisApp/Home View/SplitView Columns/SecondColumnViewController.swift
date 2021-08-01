@@ -8,7 +8,7 @@ extension SecondColumnViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let polygonsView = MultiPolygonRenderer(overlay: overlay)
         polygonsView.fillColor = .clear
-        polygonsView.strokeColor = .blue.withAlphaComponent(0.8)
+        polygonsView.strokeColor = UIColor.blue.withAlphaComponent(0.8)
         polygonsView.lineWidth = 1
         return polygonsView
     }
